@@ -1,0 +1,11 @@
+[package]
+name = "bip39-to-bip32"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bdk = { version = "0.28", package = "bdk", default-features = false, features = ["std"] }
+anyhow = "1"
+bip39 = { version = "2", features = ["rand_core"] }
+hkdf = "0.12"
+sha2 = "0.10"
